@@ -1,4 +1,5 @@
 import React, { useState, useEffect, createContext, useContext } from "react";
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 import axios from "axios";
 import API_KEY from "./Config";
@@ -9,6 +10,20 @@ const HeaderContainer = styled.header`
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
   padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const MainA = styled.span`
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 const WeatherContainer = styled.div`
@@ -63,6 +78,9 @@ const Header = () => {
 
   return (
     <HeaderContainer>
+      <Link to="/">
+        <MainA>Main</MainA>
+      </Link>
       {weather && (
         <WeatherContainer>
           <WeatherText>{weather.location.country},</WeatherText>

@@ -15,10 +15,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-  background-color: #f1f3f6;
+  background-color: #EEF5F9;
   color: #000000;
   font-family: 'Lato', sans-serif;
   font-feature-settings: "case";
+  max-width: 100%;
 }
 
 li {

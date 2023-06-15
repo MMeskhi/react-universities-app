@@ -96,6 +96,10 @@ const UniversityList = () => {
         <option value="">Select a country</option>
         <option value="Georgia">Georgia</option>
         <option value="Ukraine">Ukraine</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Germany">Germany</option>
+        <option value="France">France</option>
+        <option value="Spain">Spain</option>
       </Select>
 
       <UniUl>
